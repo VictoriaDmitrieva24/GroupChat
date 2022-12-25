@@ -10,7 +10,7 @@ public class UserWindow {
     private static final int Width = 600;
     private static final int Height = 400;
 
-    public static void main (String[] args){
+    public static void main(String[] args) {
 
     }
 
@@ -19,14 +19,13 @@ public class UserWindow {
     private final JTextField fieldInput = new JTextField();
 
 
-    private UserWindow(){
+    private UserWindow() {
         setDefaultCloseOperation(WindowConstants.EXIT_ON_CLOSE);
-        setSize(Width,Height);
+        setSize(Width, Height);
         setLocationRelativeTo(null);
         setAlwaysOnTop(true);
         log.setEditable(false);
         log.setLineWrap(true);
-
 
 
     }
