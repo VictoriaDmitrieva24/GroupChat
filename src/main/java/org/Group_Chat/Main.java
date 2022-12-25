@@ -15,6 +15,7 @@ public class Main {
         icq.appendClient(client1);
         icq.appendClient(client2);
         icq.appendClient(client3);
+
         OneToOne.appendClient(client4);
         OneToOne.appendClient(client5);
 
@@ -26,6 +27,7 @@ public class Main {
 
     }
 }
+
 class User {
     public User(String name, Chat chatroom) {
         this.name = name;
@@ -72,7 +74,7 @@ class ICQ implements Chat {
     }
 }
 
-class together implements Chat{
+class together implements Chat {
 
     ArrayList<User> users_together = new ArrayList<>();
 
@@ -87,7 +89,7 @@ class together implements Chat{
 
     @Override
     public void appendClient(User client_one) {
-            System.out.println("\n >>> К чату присоединился твой собеседник " + client_one.name);
-            users_together.add(client_one);
+        System.out.println("\n >>> К чату присоединился твой собеседник " + client_one.name);
+        users_together.add(client_one);
     }
 }
